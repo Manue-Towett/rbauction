@@ -22,7 +22,7 @@ class Logger:
         f_handler.setLevel(logging.INFO)
 
         self.logger.addHandler(s_handler)
-        self.logger.addHandler(f_handler)
+        # self.logger.addHandler(f_handler)
 
     def info(self, message: str) -> None:
         """Logs an info message"""
@@ -34,4 +34,4 @@ class Logger:
 
     def error(self, message: str) -> None:
         """Logs an error message"""
-        self.logger.error(message, exc_info=True)
+        self.logger.error(message)
